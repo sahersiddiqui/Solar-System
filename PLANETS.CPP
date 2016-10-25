@@ -1,0 +1,64 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<dos.h>
+#include<graphics.h>
+void main()
+{
+	int i,gd=DETECT,gm,x,y;
+	initgraph(&gd,&gm,"c:\\tc\\bgi");
+	circle(50,225,30);
+	outtextxy(90,225,"SUN");
+	setfillstyle(1,6);
+	floodfill(65,250,15);
+	ellipse(100,225,0,360,100,50);
+	ellipse(125,225,0,360,150,75);
+	ellipse(150,225,0,360,200,100);
+	ellipse(175,225,0,360,250,125);
+	ellipse(200,225,0,360,300,150);
+	ellipse(225,225,0,360,350,175);
+	ellipse(250,225,0,360,400,200);
+	ellipse(275,225,0,360,450,225);
+	circle(200,225,15);
+	setfillstyle(1,14);
+	floodfill(195,220,15);
+	floodfill(205,230,15);
+	outtextxy(175,200,"Mercury");
+	circle(275,235,20);
+	setfillstyle(1,12);
+	floodfill(270,230,15);
+	floodfill(280,230,15);
+	outtextxy(250,200,"Venus");
+	circle(340,255,25);
+	setfillstyle(1,9);
+	floodfill(345,257,15);
+	floodfill(335,257,15);
+	outtextxy(315,220,"Earth");
+	circle(380,150,25);
+	setfillstyle(1,4);
+	floodfill(377,160,15);
+	floodfill(380,150,15);
+	outtextxy(360,115,"Mars");
+	circle(450,300,35);
+	setfillstyle(1,3);
+	floodfill(445,300,15);
+	floodfill(460,310,15);
+	outtextxy(420,260,"Jupiter");
+	circle(570,225,25);
+	setfillstyle(1,10);
+	floodfill(565,220,15);
+	floodfill(580,222,15);
+	outtextxy(550,190,"Saturn");
+	circle(575,115,20);
+	setfillstyle(1,8);
+	floodfill(570,110,15);
+	floodfill(580,110,15);
+	ellipse(570,225,45,405,40,10);
+	outtextxy(550,80,"Uranus");
+	circle(580,390,18);
+	setfillstyle(1,7);
+	floodfill(575,385,15);
+	floodfill(585,390,15);
+	outtextxy(550,360,"Neptune");
+	getch();
+	}
